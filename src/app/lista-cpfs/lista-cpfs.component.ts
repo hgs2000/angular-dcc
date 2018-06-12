@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PessoaFisica } from './pessoa-fisica.class';
+import { BancoDeDados } from "../controle-db";
 
 @Component({
   selector: 'app-lista-cpfs',
@@ -8,12 +9,11 @@ import { PessoaFisica } from './pessoa-fisica.class';
 })
 export class ListaCPFsComponent implements OnInit {
 
-  private _arrayCPFS: Array<PessoaFisica>;
-
-
+  private arrayCPFS: Array<PessoaFisica>;
 
   ngOnInit() {
-
+    //new BancoDeDados();
+    //this.arrayCPFS = BancoDeDados.getCPFs();
   }
 
 }

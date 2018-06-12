@@ -4,29 +4,23 @@ import { RouterModule, Routes } from "@angular/router";
 
 import { AppComponent } from './app.component';
 import { ListaCPFsComponent } from './lista-cpfs/lista-cpfs.component';
-import { NavbarComponent } from './navbar/navbar.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CpfComponent } from './lista-cpfs/cpf/cpf.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 
-const routes: Routes = [ { path: 'cpfs', component: ListaCPFsComponent }]
+const routes: Routes = [{ path: 'cpfs', component: ListaCPFsComponent }]
 
 @NgModule({
   declarations: [
     AppComponent,
     ListaCPFsComponent,
-    NavbarComponent
+    CpfComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
     LayoutModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule,
-    BrowserAnimationsModule
+    NgbModule.forRoot()
   ],
   exports: [RouterModule],
   providers: [],
