@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from "@angular/router";
 
@@ -23,7 +23,7 @@ const routes: Routes = [{ path: 'cpfs', component: ListaCPFsComponent }]
     NgbModule.forRoot()
   ],
   exports: [RouterModule],
-  providers: [],
+  providers: [Title],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
