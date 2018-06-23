@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { PessoaFisica } from './pessoa-fisica.class';
-import { BancoDeDados } from "../controle-db";
-import { AppComponent } from '../app.component';
 import { Title } from '@angular/platform-browser';
 
 @Component({

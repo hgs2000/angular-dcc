@@ -3,8 +3,8 @@ export class PessoaFisica {
         private cpf: String,
         private nome: String,
         private email: String,
-        private tFixo?: String,
-        private tCel?: String) {
+        private tFixo: String = "Indefinido",
+        private tCel: String = "Indefinido") {
     }
 
     //Getters e Setters

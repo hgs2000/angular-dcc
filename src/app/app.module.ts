@@ -6,15 +6,26 @@ import { AppComponent } from './app.component';
 import { ListaCPFsComponent } from './lista-cpfs/lista-cpfs.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { CpfComponent } from './lista-cpfs/cpf/cpf.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
+import { NavbarComponent } from './navbar/navbar.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { Error404Component } from './404/Error404.component';
+import { IndexComponent } from './index/index.component';
 
-const routes: Routes = [{ path: 'cpfs', component: ListaCPFsComponent }]
+const routes: Routes = [
+  { path: '', component: IndexComponent },
+  { path: 'cpfs', component: ListaCPFsComponent },
+  { path: '404', component: Error404Component },
+  { path: '**', redirectTo: '404' },
+];
 
 @NgModule({
   declarations: [
     AppComponent,
     ListaCPFsComponent,
-    CpfComponent
+    CpfComponent,
+    NavbarComponent,
+    Error404Component,
+    IndexComponent
   ],
   imports: [
     BrowserModule,
@@ -24,6 +35,6 @@ const routes: Routes = [{ path: 'cpfs', component: ListaCPFsComponent }]
   ],
   exports: [RouterModule],
   providers: [Title],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, NavbarComponent]
 })
 export class AppModule { }
