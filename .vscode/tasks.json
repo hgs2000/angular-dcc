@@ -13,6 +13,11 @@
             "type": "npm",
             "script": "ng",
             "problemMatcher": []
+        },
+        {
+            "type": "npm",
+            "script": "electron",
+            "problemMatcher": []
         }
     ]
 }
