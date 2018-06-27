@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PessoaFisica } from './pessoa-fisica.class';
+import { PessoaFisica } from '../classes/clientes.class';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -10,10 +10,10 @@ import { Title } from '@angular/platform-browser';
 export class ListaCPFsComponent implements OnInit {
 
   private arrayCPFS: Array<PessoaFisica>;
-  public constructor(private titleService: Title){
+  public constructor(private titleService: Title) {
     this.setTitle("Pessoas Físicas | Controle de Clientes Direcon")
   }
-  public setTitle(newTitle: string){
+  public setTitle(newTitle: string) {
     this.titleService.setTitle(newTitle);
   }
   ngOnInit() {

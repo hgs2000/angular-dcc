@@ -2,6 +2,7 @@
   "name": "angular-dcc",
   "version": "0.1.0",
   "scripts": {
+    "open-api-server": "nodemon --watch 'src/**/*' -e ts,tsx --exec ts-node ./api/src/server.ts",
     "electron": "ng build && electron electron.ts",
     "ng": "ng",
     "start": "ng serve",
@@ -23,7 +24,10 @@
     "@angular/platform-browser-dynamic": "^6.0.3",
     "@angular/router": "^6.0.3",
     "@ng-bootstrap/ng-bootstrap": "^2.1.0",
+    "@types/sqlite3": "^3.1.3",
     "core-js": "^2.5.4",
+    "koa": "^2.5.1",
+    "koa-router": "^7.4.0",
     "rxjs": "^6.0.0",
     "sqlite3": "^4.0.0",
     "zone.js": "^0.8.26"
