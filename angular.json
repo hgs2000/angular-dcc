@@ -26,7 +26,7 @@
               "src/styles.css",
               "src/assets/bootstrap/css/bootstrap.css",
               "src/assets/bootstrap/css/bootstrap-reboot.css",
-              "src/assets/bootstrap/css/bootstrap-grid.css",
+              "src/assets/bootstrap/css/bootstrap-grid.css"
             ],
             "scripts": [
               "src/assets/jquery-3.3.1.min.js",

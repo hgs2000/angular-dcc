@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PessoaFisica } from '../classes/clientes.class';
 import { Title } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-lista-cpfs',

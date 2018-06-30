@@ -11,7 +11,7 @@ export class NavbarComponent {
                 new LinkDireto("Empresas", "/cnpjs")]
             )
         );
-        console.log(this.links)
+        //log(this.links)
     }
 }
 
